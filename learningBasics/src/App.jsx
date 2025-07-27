@@ -4,6 +4,11 @@ import ProductCard from "./components/ProductCard"
 import NotificationBanner from "./components/NotificationBanner"
 import PricingTableItem from "./components/PricingTableItem"
 import TestimonialCard from "./components/TestimonialCard"
+import AlertBox from "./components/AlertBox"
+import UserBadge from "./components/UserBadge"
+import Tag from "./components/Tag"
+import ProgressBar from "./components/ProgressBar"
+import StatsCard from "./components/StatsCard"
 
 function App() {
 
@@ -60,6 +65,43 @@ function App() {
         quote="This app made my workflow so much easier! Highly recommended."
         author="John Smith"
       />
+    </section>
+
+    <section style={{margin: "2rem 0"}}>
+      <h2>AlertBox Examples</h2>
+      <AlertBox type="success">Success! Your action was completed.</AlertBox>
+      <AlertBox type="error">Error! Something went wrong.</AlertBox>
+      <AlertBox type="warning">Warning! Please check your input.</AlertBox>
+      <AlertBox type="info">Info! This is an informational message.</AlertBox>
+    </section>
+
+    <section style={{margin: "2rem 0"}}>
+      <h2>UserBadge Example</h2>
+      <UserBadge avatar="https://randomuser.me/api/portraits/men/32.jpg" name="Alex Turner" />
+    </section>
+
+    <section style={{margin: "2rem 0"}}>
+      <h2>Tag Examples</h2>
+      <div>
+        <Tag>React</Tag>
+        <Tag>Styled Components</Tag>
+        <Tag>UI</Tag>
+        <Tag>Demo</Tag>
+      </div>
+    </section>
+
+    <section style={{margin: "2rem 0"}}>
+      <h2>ProgressBar Example</h2>
+      <ProgressBar value={70} />
+    </section>
+
+    <section style={{margin: "2rem 0"}}>
+      <h2>StatsCard Example</h2>
+      <div style={{display: "flex", gap: "1rem"}}>
+        <StatsCard icon="👀" value={1200} label="Views" />
+        <StatsCard icon="👍" value={350} label="Likes" />
+        <StatsCard icon="💬" value={89} label="Comments" />
+      </div>
     </section>
     </>
   )
