@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Banner = styled.div`
   width: 100%;
   padding: 1rem 2rem;
-  background: #ffe066;
+  background: ${(props)=> props.$background ? "red": "yellow"};
   color: #222;
   font-size: 1.1rem;
   text-align: center;

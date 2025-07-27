@@ -9,6 +9,7 @@ import UserBadge from "./components/UserBadge"
 import Tag from "./components/Tag"
 import ProgressBar from "./components/ProgressBar"
 import StatsCard from "./components/StatsCard"
+import FeatureList from "./components/FeatureList"
 
 function App() {
 
@@ -102,6 +103,11 @@ function App() {
         <StatsCard icon="👍" value={350} label="Likes" />
         <StatsCard icon="💬" value={89} label="Comments" />
       </div>
+    </section>
+
+    <section style={{margin: "2rem 0"}}>
+      <h2>FeatureList Example</h2>
+      <FeatureList features={["Fast Performance", "Easy Integration", "Customizable Themes", "Responsive Design"]} />
     </section>
     </>
   )
